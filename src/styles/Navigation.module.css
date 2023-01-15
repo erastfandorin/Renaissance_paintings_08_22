@@ -1,0 +1,84 @@
+.navigation {
+  padding-top: 24px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navigation__menu {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.navigation__logo {
+  margin-right: 45px;
+}
+
+/* .navigation__image {
+} */
+
+.navigation__list {
+  padding: 0;
+  display: flex;
+  margin-right: 15px;
+}
+
+.navigation__listItem {
+  max-width: 95px;
+  margin-right: 50px;
+  margin-bottom: 5px;
+  word-break: break-word;
+}
+
+.navigation__listItem:last-child {
+  margin-right: 0;
+}
+
+.navigation__listItem:hover a {
+  color: #5b3a32;
+}
+
+.navigation__listItem a {
+  font-family: "Merriweather";
+  font-size: 14px;
+  color: #555555;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+/* header .navigation {
+} */
+
+@media (max-width: 1150px) {
+  footer .navigation {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation,
+  .navigation__menu,
+  .navigation__list {
+    flex-direction: column;
+  }
+
+  .navigation__menu {
+    margin-bottom: 15px;
+  }
+
+  .navigation__logo {
+    margin-right: 0;
+    margin-bottom: 7px;
+  }
+
+  .navigation__list {
+    margin: 0;
+    align-content: center;
+  }
+
+  .navigation__listItem {
+    margin-right: 0;
+  }
+}

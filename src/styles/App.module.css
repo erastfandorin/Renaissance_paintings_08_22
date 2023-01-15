@@ -1,0 +1,66 @@
+/* App styles */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app main {
+  flex-grow: 1;
+}
+
+.app__header {
+  background-color: #f6f3f3;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.app__headline {
+  margin: 45px 0 39px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #343030;
+}
+
+/* general styles */
+
+.cont {
+  box-sizing: border-box;
+  max-width: 1220px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 13px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #403432;
+  border: none;
+  color: #ffffff;
+  font-family: "Merriweather";
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+}
+
+.btn__in-card {
+  background-color: #5b3a32;
+}
+
+.btn__in-card::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  padding: 5px 3px;
+  background: url("../assets/img/check.svg") center no-repeat;
+}

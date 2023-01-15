@@ -1,0 +1,59 @@
+.card {
+  width: 280px;
+  min-height: 328px;
+  margin: 0 5px 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #e1e1e1;
+}
+
+.card__img {
+  width: 100%;
+}
+
+/* .card:first-child {
+  margin: 0;
+} */
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  /* align-items: center; */
+  padding: 7px 24px 24px 24px;
+}
+
+.card__name {
+  margin: 15px 0 23px;
+  font-size: 18px;
+  color: #343030;
+}
+
+.card__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card__currentPrice {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #343030;
+}
+
+.card__oldPrice {
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration-line: line-through;
+  color: #a0a0a0;
+}
+
+.card__soldOut {
+  font-weight: 700;
+  font-size: 16px;
+  color: #343030;
+}
