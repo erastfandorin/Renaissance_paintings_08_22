@@ -3,31 +3,38 @@ import React from "react";
 import generalStyles from "../styles/App.module.css";
 import styles from "../styles/Card.module.css";
 
-
 function Card({ paint, setPaintings }) {
   const { name, img, prise, discount, isAvailable, isInCard } = paint;
-  let newPrise;
 
-  if (discount) {
-    newPrise = prise - discount;
-  }
+  const priseFormat = new Intl.NumberFormat("ru", {
+    style: "currency",
+    currency: "USD",
+    currencyDisplay: "symbol",
+    minimumFractionDigits: 0,
+  });
+
+  let oldPrice = priseFormat.format(prise);
+  let newPrise = discount ? priseFormat.format(prise - discount) : 0;
+
+  let btnClass = `${generalStyles.btn} ${styles.btn}`;
+  if (isInCard) btnClass = btnClass + `${generalStyles.btn__inCard}`;
 
   return (
     <li className={styles.card}>
-      <img className={styles.card__img} src={img} />
-      <div className={styles.card__description}>
-        <h3 className={styles.card__name}>{name}</h3>
+      <img className={styles.img} src={img} />
+      <div className={styles.description}>
+        <h3 className={styles.name}>{name}</h3>
         {isAvailable ? (
-          <div className={styles.card__box}>
+          <div className={styles.box}>
             {discount ? (
               <div>
-                <p className={styles.card__oldPrice}>{prise} $</p>
-                <p className={styles.card__currentPrice}>{newPrise} $</p>
+                <p className={styles.oldPrice}>{oldPrice}</p>
+                <p className={styles.currentPrice}>{newPrise}</p>
               </div>
             ) : (
-              <p className={styles.card__currentPrice}>{prise} $</p>
+              <p className={styles.currentPrice}>{oldPrice}</p>
             )}
-            <button className={generalStyles.btn}>Придбати</button>
+            <button className={btnClass}>Придбати</button>
           </div>
         ) : (
           <p className={styles.soldOut}>Продано</p>

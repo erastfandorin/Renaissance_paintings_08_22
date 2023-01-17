@@ -14,6 +14,8 @@
 
 .navigation__logo {
   margin-right: 45px;
+  display: flex;
+  align-items: center;
 }
 
 /* .navigation__image {
@@ -27,8 +29,7 @@
 
 .navigation__listItem {
   max-width: 95px;
-  margin-right: 50px;
-  margin-bottom: 5px;
+  margin: 3px 50px 3px 0;
   word-break: break-word;
 }
 

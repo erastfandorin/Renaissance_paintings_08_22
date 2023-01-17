@@ -1,12 +1,24 @@
 .catalog {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-left: -5px; 
-    /* hack for add margin to card but save grid */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  /* hack for add margin to card but save grid */
 }
 
 .soldOut {
-    font-size: 20px;
-    color: #343030;
+  font-size: 20px;
+  color: #343030;
+}
+
+@media (max-width: 1023px) {
+  .catalog {
+    margin: 0 -10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog {
+    margin: 0 -5px;
+  }
 }

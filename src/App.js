@@ -21,7 +21,7 @@ function App() {
       prise: 2000000,
       discount: 1000000,
       isAvailable: true,
-      isInCard: false,
+      isInCard: true,
     },
     {
       id: 2,

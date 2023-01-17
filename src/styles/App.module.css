@@ -26,7 +26,7 @@
 
 .cont {
   box-sizing: border-box;
-  max-width: 1220px;
+  max-width: 1250px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -53,11 +53,11 @@
   opacity: 0.4;
 }
 
-.btn__in-card {
+.btn__inCard {
   background-color: #5b3a32;
 }
 
-.btn__in-card::before {
+.btn__inCard::before {
   content: "";
   width: 20px;
   height: 20px;
