@@ -1,6 +1,4 @@
 .search {
-  /* max-width: 416px;
-    width: 100%; */
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
@@ -13,9 +11,6 @@
   padding: 13px 16px;
   flex-grow: 1;
   flex-shrink: 1;
-
-  /* color: #9f9f9f; */
-  /* border-color: #e1e1e1; */
   border: 1px solid #e1e1e1;
   border-right: none;
   outline: #b5b5b5;
@@ -35,4 +30,10 @@
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media (max-width: 991px) {
+ .search {
+    justify-content: center;
+  }
 }

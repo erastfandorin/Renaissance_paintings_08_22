@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 -16px;
-  /* hack for add margin to card but save grid */
+  margin: 0 -15px; /* hack for add margin to card but save grid / margin linked with card margin*/
 }
 
 .soldOut {
@@ -11,14 +10,14 @@
   color: #343030;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .catalog {
     margin: 0 -10px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .catalog {
-    margin: 0 -5px;
+    margin: 0 -7px;
   }
 }

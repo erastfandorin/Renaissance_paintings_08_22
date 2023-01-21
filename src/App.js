@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import Catalog from "./components/Catalog.js";
 import Search from "./components/Search";
 import Contact from "./components/Contact";
+import MenuBurger from "./components/MenuBurger";
 
 import TheBirthofVenus from "./assets/img/TheBirthofVenus.jpg";
 import TheLastSupper from "./assets/img/TheLastSupper.jpg";
@@ -16,7 +17,8 @@ function App() {
   const [paintings, setPaintings] = useState([
     {
       id: 1,
-      name: "«Народження Венери» Сандро Боттічеллі",
+      imgName: "«Народження Венери»",
+      authorName: "Сандро Боттічеллі",
       img: TheBirthofVenus,
       prise: 2000000,
       discount: 1000000,
@@ -25,7 +27,8 @@ function App() {
     },
     {
       id: 2,
-      name: "Тайна вечеря (фреска Леонардо да Вінчі)",
+      imgName: "Тайна вечеря",
+      authorName: "Леонардо да Вінчі",
       img: TheLastSupper,
       prise: 3000000,
       discount: 0,
@@ -34,7 +37,8 @@ function App() {
     },
     {
       id: 3,
-      name: "Створення Адама Мікеланджело",
+      imgName: "Створення Адама",
+      authorName: "Мікеланджело",
       img: TheCreationofAdam,
       prise: 6000000,
       discount: 1000000,
@@ -43,7 +47,8 @@ function App() {
     },
     {
       id: 4,
-      name: "Урок анатомії доктора Тюльпа Рембрандт",
+      imgName: "Урок анатомії доктора Тюльпа",
+      authorName: "Рембрандт",
       img: TheAnatomyLessonofDrTulp,
       prise: 6000000,
       discount: 0,
@@ -57,6 +62,7 @@ function App() {
       <header className={generalStyles.app__header}>
         <Navigation>
           <Search />
+          <MenuBurger />
         </Navigation>
       </header>
       <main className={generalStyles.cont}>

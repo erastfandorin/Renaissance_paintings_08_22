@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .navigation__menu {
@@ -52,11 +52,22 @@
 /* header .navigation {
 } */
 
-@media (max-width: 1150px) {
+@media (max-width: 1043px) {
   footer .navigation {
     justify-content: center;
   }
 }
+
+@media (max-width: 991px) {
+  header .navigation__list {
+    display: none;
+  }
+
+  header .navigation__logo {
+    margin-right: 8px;
+  }
+}
+
 
 @media (max-width: 767px) {
   .navigation,

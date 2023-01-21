@@ -61,6 +61,6 @@
   content: "";
   width: 20px;
   height: 20px;
-  padding: 5px 3px;
+  padding: 0px 3px;
   background: url("../assets/img/check.svg") center no-repeat;
 }

@@ -1,34 +1,27 @@
 .card {
-  /* width: 280px; */
-  /* width: 23.8%; */
+  min-width: 267px;
   width: 21.68%;
   min-height: 328px;
-  margin: 0 16px 10px;
+  margin: 0 15px 32px; /* this margin linked with catalog margin */
   display: flex;
   flex-direction: column;
-  height: 100%;
   border: 1px solid #e1e1e1;
 }
 
 .img {
   width: 100%;
+  margin-bottom: 2px;
 }
-
-/* .card:first-child {
-  margin: 0;
-} */
 
 .description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-  /* align-items: center; */
   padding: 7px 24px 24px 24px;
 }
 
 .name {
-  margin: 2px 0 23px;
   line-height: 1.4;
   font-size: 18px;
   color: #343030;
@@ -36,10 +29,11 @@
 }
 
 .box {
+  margin-top: 23px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .currentPrice {
@@ -56,33 +50,35 @@
 }
 
 .btn {
-  padding: 15px 19px;
+  min-width: 118px;
+  padding: 15px 8px;
   margin-left: 6px;
 }
 
 .soldOut {
-  margin-bottom: 15px;
+  margin: 23px 0 15px;
   font-weight: 700;
   font-size: 16px;
   color: #343030;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .card {
     width: 30.4%;
-    margin: 0 10px 10px;
+    margin: 0 10px 20px; /* linked with catalog margin */
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .card {
+    min-width: 260px;
     width: 47%;
-    margin: 0 10px 10px;
+    margin: 0 7px 14px; /* linked with catalog margin */
   }
 }
 
-@media (max-width: 424px) {
+@media (max-width: 575px) {
   .card {
-    width: 98%;
+    width: 98%; /* linked with catalog margin */
   }
 }

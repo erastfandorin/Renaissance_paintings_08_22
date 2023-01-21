@@ -7,7 +7,7 @@ function Search(props) {
     <form className={styles.search}>
       <input
         className={styles.search__input}
-        placeholder="Пошук за назвою картини"
+        placeholder="Пошук за назвою"
       ></input>
       <button className={`${styles.search__btn} ${generalStyles.btn}`}>
         Знайти
